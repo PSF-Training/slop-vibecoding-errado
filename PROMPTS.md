@@ -1,4 +1,4 @@
-# README
+# Histórico de Prompts que chegou a esse projeto
 
 Esse é o conjunto de prompts e custos - sempre crescentes - na medida em que adiciono funcionalidades eu requisitos, sem nenhum controle, aparentemente os custos vão se duplicando, até que o projeto colapsa, e eu reinicio do zero para o projeto colapsar novamente.
 
