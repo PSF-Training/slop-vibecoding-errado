@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2b6b"/>
+      <stop offset="1" stop-color="#0e1330"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#35b6ff"/>
+      <stop offset="1" stop-color="#7ef0c9"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- base arredondada -->
+  <rect x="8" y="8" width="240" height="240" rx="52" fill="url(#bg)"/>
+  <rect x="8" y="8" width="240" height="240" rx="52" fill="none"
+        stroke="#3f5bd8" stroke-opacity="0.55" stroke-width="2"/>
+
+  <!-- grade sutil -->
+  <g stroke="#4a63d8" stroke-opacity="0.18" stroke-width="1">
+    <path d="M40 176 H216 M40 128 H216 M40 80 H216 M88 48 V208 M136 48 V208 M184 48 V208"/>
+  </g>
+
+  <!-- trajetória de Collatz estilizada (sobe e cai até 1) -->
+  <g filter="url(#glow)" fill="none" stroke="url(#line)"
+     stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 176 L64 120 L88 72 L112 128 L136 88 L160 152 L184 176 L208 192"/>
+  </g>
+
+  <!-- nós (valores) -->
+  <g fill="#0e1330" stroke="#8ef0d0" stroke-width="3">
+    <circle cx="40" cy="176" r="6"/>
+    <circle cx="88" cy="72" r="6"/>
+    <circle cx="136" cy="88" r="6"/>
+    <circle cx="208" cy="192" r="6"/>
+  </g>
+
+  <!-- pico destacado -->
+  <circle cx="88" cy="72" r="10" fill="#ff7a59" fill-opacity="0.25"/>
+  <circle cx="88" cy="72" r="5" fill="#ff7a59"/>
+</svg>

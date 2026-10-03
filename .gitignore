@@ -1,0 +1,11 @@
+# Artefatos de build
+build/
+build-macos/
+build-gnustep/
+tmp*/
+
+# Ícone gerado a partir do SVG
+assets/collatz.png
+
+# Ambiente virtual Python (não faz parte do projeto C)
+.venv/
