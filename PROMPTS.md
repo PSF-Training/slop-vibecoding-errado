@@ -103,5 +103,7 @@ Prompt:
 
 ***Até aqui, $0.38 + $0.97:*** 
 
+![opencode mostrando custo de 38 centavos de dólar](008-instruction_opencode.png)
+
 Deu erro de novo. Não consigo chegar no meu objetivo. Desisto - veja o resultado no repositório [slop-vibecoding-errado](https://github.com/PSF-Training/slop-vibecoding-errado).
 
